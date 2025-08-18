@@ -1,0 +1,12 @@
+<web-app version="3.1">
+
+    <servlet>
+        <servlet-name>LifecycleServlet</servlet-name>
+        <servlet-class>com.spookzie.LifecycleServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LifecycleServlet</servlet-name>
+        <url-pattern>/LifecycleServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
