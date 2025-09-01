@@ -1,5 +1,6 @@
 <web-app version="3.1">
 
+    <!--Lifecycle-->
     <servlet>
         <servlet-name>LifecycleServlet</servlet-name>
         <servlet-class>com.spookzie.LifecycleServlet</servlet-class>
@@ -9,6 +10,7 @@
         <url-pattern>/LifecycleServlet</url-pattern>
     </servlet-mapping>
 
+    <!--doGet & doPost-->
     <servlet>
         <servlet-name>AddServlet</servlet-name>
         <servlet-class>com.spookzie.AddServlet</servlet-class>
@@ -18,6 +20,25 @@
         <url-pattern>/add</url-pattern>
     </servlet-mapping>
 
+    <!--Servlet Config-->
+    <servlet>
+        <servlet-name>ConfigTestServlet</servlet-name>
+        <servlet-class>com.spookzie.ConfigTestServlet</servlet-class>
+        <init-param>
+            <param-name>username</param-name>
+            <param-value>abc</param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>StrongPassword@123</param-value>
+        </init-param>
+    </servlet>
+        <servlet-mapping>
+        <servlet-name>ConfigTestServlet</servlet-name>
+        <url-pattern>/ConfigTestServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--Loading index at frontend-->
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
